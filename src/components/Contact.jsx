@@ -19,20 +19,12 @@ export default function Contact() {
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile, opens in a new tab">
               <Github size={18} /><span className="contact-link-label">GitHub Profile</span><ArrowUpRight size={15} />
             </a>
-            {personalInfo.linkedin ? (
-              <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab">
-                <Linkedin size={18} /><span className="contact-link-label">LinkedIn Profile</span><ArrowUpRight size={15} />
-              </a>
-            ) : (
-              <div className="contact-placeholder"><Linkedin size={18} /><span>LinkedIn</span><small>Profile link coming soon</small></div>
-            )}
-            {personalInfo.email ? (
-              <a href={`mailto:${personalInfo.email}`} aria-label={`Email ${personalInfo.displayName}`}>
-                <Mail size={18} /><span className="contact-link-label">Email: {personalInfo.email}</span><ArrowUpRight size={15} />
-              </a>
-            ) : (
-              <div className="contact-placeholder"><Mail size={18} /><span>Email</span><small>Address available on request</small></div>
-            )}
+            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab">
+              <Linkedin size={18} /><span className="contact-link-label">LinkedIn Profile</span><ArrowUpRight size={15} />
+            </a>
+            <a href={`mailto:${personalInfo.email}`} aria-label={`Email ${personalInfo.displayName}`}>
+              <Mail size={18} /><span className="contact-link-label">{personalInfo.email}</span><ArrowUpRight size={15} />
+            </a>
           </div>
         </div>
       </div>
