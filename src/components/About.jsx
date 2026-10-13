@@ -18,22 +18,14 @@ export default function About() {
         <div className="about-layout">
           <div className="about-copy reveal">
             <p className="about-lead">
-              I’m {personalInfo.displayName}, a second-year Computer Science and
-              Engineering student at {personalInfo.collegeShort}, Bengaluru,
-              working toward becoming a software engineer while maintaining a{" "}
-              {personalInfo.cgpa} CGPA.
-            </p>
-            <p>
-              I’m drawn to programming, software engineering, and the process
-              of turning a problem into something useful. In my first year, I
-              worked on a Driver Drowsiness Detection System, which introduced
-              me to computer vision and the practical challenges of building
-              with it.
-            </p>
-            <p>
-              I’m continuing to strengthen my fundamentals and explore new
-              technologies, with a focus on learning by making and improving
-              one step at a time.
+              I am a second-year B.E. Computer Science and Engineering student
+              at {personalInfo.college}, Bengaluru, with a CGPA of{" "}
+              {personalInfo.cgpa}. I enjoy solving problems, learning new
+              technologies, and developing software solutions to practical
+              challenges. My interests include software engineering,
+              artificial intelligence, machine learning, and full-stack web
+              development. I am continuously improving my technical skills
+              through coursework, hands-on projects, and independent learning.
             </p>
             <a className="text-link" href="#education">
               A little more about my studies <ArrowUpRight size={15} />

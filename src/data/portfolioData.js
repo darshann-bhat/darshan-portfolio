@@ -1,13 +1,13 @@
 export const personalInfo = {
   fullName: "Darshan Manjunath Bhat",
   displayName: "Darshan Bhat",
-  role: "Computer Science Engineering Student | Aspiring Software Engineer",
+  role: "Computer Science Engineering Student | Aspiring Software Developer",
   location: "Bengaluru, Karnataka, India",
   shortLocation: "Bengaluru, India",
   github: "https://github.com/darshann-bhat",
-  linkedin: "",
-  email: "",
-  college: "BMS Institute of Technology & Management",
+  linkedin: "https://www.linkedin.com/in/darshan-bhat-035022238/",
+  email: "bhatdarshan640@gmail.com",
+  college: "BMS Institute of Technology and Management",
   collegeShort: "BMSIT&M",
   degree: "Bachelor of Engineering",
   branch: "Computer Science and Engineering",
@@ -17,21 +17,25 @@ export const personalInfo = {
 
 export const skillGroups = [
   {
-    title: "Programming languages",
-    items: ["C", "C++", "Python", "SQL"],
+    title: "Programming Languages",
+    items: ["C", "C++", "Python"],
   },
   {
-    title: "Developer tools",
-    items: ["GitHub", "Visual Studio Code"],
+    title: "Web Development",
+    items: ["HTML", "CSS", "JavaScript", "React", "Vite"],
+  },
+  {
+    title: "Databases",
+    items: ["SQL", "PostgreSQL"],
+  },
+  {
+    title: "Developer Tools",
+    items: ["GitHub", "Visual Studio Code", "Replit"],
   },
 ];
 
 export const exploringSkills = [
   "Data Structures and Algorithms",
-  "Web Development",
-  "HTML and CSS",
-  "JavaScript",
-  "React",
   "Artificial Intelligence and Machine Learning",
   "Computer Vision",
   "Backend Development",
@@ -66,7 +70,7 @@ export const projects = [
     category: "Computer Vision / Driver Safety",
     yearLabel: "FIRST-YEAR ENGINEERING PROJECT",
     description:
-      "A driver safety project exploring facial landmark analysis to identify potential signs of drowsiness. Eye closure, yawning indicators, and head pose information help detect possible fatigue and trigger alerts.",
+      "This first-year project explores how visual cues from a driver’s face could help flag potential fatigue. I worked with MediaPipe Face Mesh landmarks and eye-closure, yawning, and head-pose indicators, then connected the detection flow to a Streamlit interface with audio alerts and email notifications.",
     technologies: [
       "Python",
       "MediaPipe Face Mesh",

@@ -66,8 +66,9 @@ button { color: inherit; }
 .button-secondary { color: var(--ink); }
 .button-secondary:hover { border-color: var(--accent); }
 .hero-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 17px; margin-top: 40px; color: var(--muted); font-family: var(--mono); font-size: 10px; }
-.social-link, .location-label { display: inline-flex; align-items: center; gap: 7px; transition: color .2s ease; }
-.social-link:hover { color: var(--accent); }
+.social-link { display: inline-flex; min-height: 32px; align-items: center; gap: 7px; padding: 0 9px; border: 1px solid var(--line); transition: color .2s ease, border-color .2s ease; }
+.location-label { display: inline-flex; align-items: center; gap: 7px; transition: color .2s ease; }
+.social-link:hover { border-color: var(--line-strong); color: var(--accent); }
 .location-label svg { color: var(--accent); }
 .meta-divider { width: 1px; height: 16px; background: var(--line-strong); }
 .hero-art { position: relative; min-height: 435px; padding: 0 0 31px; animation: rise-in .8s .12s both ease-out; }

@@ -1,7 +1,7 @@
-import { ArrowUpRight, Code2, Wrench } from "lucide-react";
+import { ArrowUpRight, Code2, Database, PanelsTopLeft, Wrench } from "lucide-react";
 import { exploringSkills, skillGroups } from "../data/portfolioData.js";
 
-const icons = [Code2, Wrench];
+const icons = [Code2, PanelsTopLeft, Database, Wrench];
 
 export default function Skills() {
   return (
@@ -10,7 +10,7 @@ export default function Skills() {
         <div className="section-heading reveal">
           <span className="section-kicker">02 / TOOLKIT</span>
           <h2>What I work <span>with</span></h2>
-          <p className="section-intro">A snapshot of the tools and languages I currently use, alongside the areas I’m exploring.</p>
+          <p className="section-intro">A practical snapshot of languages and technologies represented in my coursework, projects, and the site itself. No proficiency ratings — just tools I’ve worked with.</p>
         </div>
         <div className="skill-groups">
           {skillGroups.map((group, index) => {

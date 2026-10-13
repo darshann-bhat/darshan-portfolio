@@ -16,11 +16,11 @@ export default function Contact() {
             <div className="contact-location"><MapPin size={16} /> {personalInfo.location}</div>
           </div>
           <div className="contact-links">
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" aria-label="GitHub profile, opens in a new tab">
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile, opens in a new tab">
               <Github size={18} /><span>GitHub</span><ArrowUpRight size={15} />
             </a>
             {personalInfo.linkedin ? (
-              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile, opens in a new tab">
+              <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile, opens in a new tab">
                 <Linkedin size={18} /><span>LinkedIn</span><ArrowUpRight size={15} />
               </a>
             ) : (

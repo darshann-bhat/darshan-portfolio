@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Github, MapPin } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Github, Linkedin, MapPin } from "lucide-react";
 import { personalInfo } from "../data/portfolioData.js";
 
 export default function Hero() {
@@ -15,18 +15,18 @@ export default function Hero() {
             <br />
             <span>Darshan Bhat.</span>
           </h1>
-          <p className="hero-tagline">Engineering ideas into meaningful software.</p>
+          <p className="hero-tagline">{personalInfo.role}</p>
           <p className="hero-description">
-            I’m a Computer Science and Engineering student at BMSIT&amp;M,
-            Bengaluru, interested in programming, software development, and
-            solving real-world problems through technology.
+            I’m interested in software development, solving practical problems,
+            and exploring how artificial intelligence and machine learning can
+            help build useful technology.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">
-              Explore my projects <ArrowUpRight size={17} />
+              View Projects <ArrowUpRight size={17} />
             </a>
             <a className="button button-secondary" href="#contact">
-              Get in touch <ArrowDown size={16} />
+              Contact Me <ArrowDown size={16} />
             </a>
           </div>
           <div className="hero-meta">
@@ -34,10 +34,19 @@ export default function Hero() {
               className="social-link"
               href={personalInfo.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Visit Darshan Bhat on GitHub (opens in a new tab)"
             >
               <Github size={17} /> GitHub <ArrowUpRight size={13} />
+            </a>
+            <a
+              className="social-link"
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Darshan Bhat on LinkedIn (opens in a new tab)"
+            >
+              <Linkedin size={17} /> LinkedIn <ArrowUpRight size={13} />
             </a>
             <span className="meta-divider" aria-hidden="true" />
             <span className="location-label">

@@ -62,12 +62,12 @@ export default function Projects() {
                 <span className="project-environment">Built in <strong>{project.environment}</strong></span>
                 <div className="project-links">
                   {project.repository ? (
-                    <a className="project-link" href={project.repository} target="_blank" rel="noreferrer">
+                    <a className="project-link" href={project.repository} target="_blank" rel="noopener noreferrer">
                       Repository <ArrowUpRight size={14} />
                     </a>
                   ) : <span className="project-unavailable">Repository coming soon</span>}
                   {project.demo && (
-                    <a className="project-link" href={project.demo} target="_blank" rel="noreferrer">
+                    <a className="project-link" href={project.demo} target="_blank" rel="noopener noreferrer">
                       Live demo <ArrowUpRight size={14} />
                     </a>
                   )}

@@ -21,7 +21,7 @@ export default function Footer() {
         <nav className="footer-nav" aria-label="Footer navigation">
           {footerLinks.map(([label, id]) => <a href={`#${id}`} key={id}>{label}</a>)}
         </nav>
-        <a className="footer-github" href={personalInfo.github} target="_blank" rel="noreferrer" aria-label="Visit Darshan Bhat on GitHub">
+        <a className="footer-github" href={personalInfo.github} target="_blank" rel="noopener noreferrer" aria-label="Visit Darshan Bhat on GitHub">
           <Github size={17} /> GitHub <ArrowUpRight size={14} />
         </a>
       </div>
