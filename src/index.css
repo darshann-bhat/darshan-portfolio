@@ -210,7 +210,8 @@ button { color: inherit; }
 .contact-location { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-family: var(--mono); font-size: 9px; }
 .contact-location svg { color: var(--accent); }
 .contact-links { display: flex; flex-direction: column; align-self: center; border-top: 1px solid var(--line); }
-.contact-links > a, .contact-placeholder { display: grid; grid-template-columns: 24px 1fr auto; align-items: center; gap: 10px; min-height: 55px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; transition: color .2s ease; }
+.contact-links > a, .contact-placeholder { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; align-items: center; gap: 10px; min-height: 55px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; transition: color .2s ease; }
+.contact-link-label { min-width: 0; overflow-wrap: anywhere; line-height: 1.5; }
 .contact-links > a svg:first-child, .contact-placeholder svg { color: var(--accent); }
 .contact-links > a svg:last-child { color: var(--dim); }
 .contact-links > a:hover { color: var(--ink); }
